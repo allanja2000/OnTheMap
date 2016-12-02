@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A9DD8CA61DF0F68400DB0B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD8CA51DF0F68400DB0B88 /* AppDelegate.swift */; };
-		A9DD8CA81DF0F68400DB0B88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD8CA71DF0F68400DB0B88 /* ViewController.swift */; };
 		A9DD8CAB1DF0F68400DB0B88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DD8CA91DF0F68400DB0B88 /* Main.storyboard */; };
 		A9DD8CAD1DF0F68400DB0B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DD8CAC1DF0F68400DB0B88 /* Assets.xcassets */; };
 		A9DD8CB01DF0F68400DB0B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DD8CAE1DF0F68400DB0B88 /* LaunchScreen.storyboard */; };
+		A9DD8CB81DF0FEE300DB0B88 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD8CB71DF0FEE300DB0B88 /* LoginViewController.swift */; };
+		A9DD8CBA1DF0FEF200DB0B88 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD8CB91DF0FEF200DB0B88 /* MapViewController.swift */; };
+		A9DD8CBC1DF0FF0600DB0B88 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD8CBB1DF0FF0600DB0B88 /* TableViewController.swift */; };
+		A9DD8CBE1DF0FF1700DB0B88 /* InfoPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD8CBD1DF0FF1700DB0B88 /* InfoPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9DD8CA21DF0F68400DB0B88 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DD8CA51DF0F68400DB0B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9DD8CA71DF0F68400DB0B88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9DD8CAA1DF0F68400DB0B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9DD8CAC1DF0F68400DB0B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DD8CAF1DF0F68400DB0B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9DD8CB11DF0F68400DB0B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DD8CB71DF0FEE300DB0B88 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A9DD8CB91DF0FEF200DB0B88 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A9DD8CBB1DF0FF0600DB0B88 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A9DD8CBD1DF0FF1700DB0B88 /* InfoPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		A9DD8CA41DF0F68400DB0B88 /* OnTheMap */ = {
 			isa = PBXGroup;
 			children = (
+				A9DD8CBF1DF0FF2E00DB0B88 /* Controller */,
 				A9DD8CA51DF0F68400DB0B88 /* AppDelegate.swift */,
-				A9DD8CA71DF0F68400DB0B88 /* ViewController.swift */,
 				A9DD8CA91DF0F68400DB0B88 /* Main.storyboard */,
 				A9DD8CAC1DF0F68400DB0B88 /* Assets.xcassets */,
 				A9DD8CAE1DF0F68400DB0B88 /* LaunchScreen.storyboard */,
 				A9DD8CB11DF0F68400DB0B88 /* Info.plist */,
 			);
 			path = OnTheMap;
+			sourceTree = "<group>";
+		};
+		A9DD8CBF1DF0FF2E00DB0B88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A9DD8CB71DF0FEE300DB0B88 /* LoginViewController.swift */,
+				A9DD8CB91DF0FEF200DB0B88 /* MapViewController.swift */,
+				A9DD8CBB1DF0FF0600DB0B88 /* TableViewController.swift */,
+				A9DD8CBD1DF0FF1700DB0B88 /* InfoPostViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DD8CA81DF0F68400DB0B88 /* ViewController.swift in Sources */,
+				A9DD8CB81DF0FEE300DB0B88 /* LoginViewController.swift in Sources */,
 				A9DD8CA61DF0F68400DB0B88 /* AppDelegate.swift in Sources */,
+				A9DD8CBC1DF0FF0600DB0B88 /* TableViewController.swift in Sources */,
+				A9DD8CBE1DF0FF1700DB0B88 /* InfoPostViewController.swift in Sources */,
+				A9DD8CBA1DF0FEF200DB0B88 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
